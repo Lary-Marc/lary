@@ -28,10 +28,6 @@ app.get('/hello', (req, res) => {
     console.log("I love myself");
   });
 
-app.get('/register', (req, res) => {
-    res.render('register');
-  });
-
   app.get('/registration', (req, res) => {
     res.render('index');
   });
