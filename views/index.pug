@@ -1,0 +1,47 @@
+doctype 
+html
+    head
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+        title= title
+    body
+        div.row.justify-content-center
+            div.col-md-6
+                div.card-body
+                    header.card-header
+                        h1.card-title ZaWash Washing Bay
+                        h4.card-title Registration For Car Wash 
+                    form(method="POST" action='/registration')
+                        div.form-row
+                            div.col.form-group
+                                label
+                                input.form-control(name="fullname" placeholder="Enter full name")
+                            div.col.form-group
+                                label
+                                input.form-control(name="residence" placeholder="Residence")
+                            div.col.form-group
+                                label
+                                select.form-control(name="gender")  
+                                    option(value="none" selected disabled hidden) Gender     
+                                    option(value="") Male
+                                    option(value="") Female 
+                        div.form-row
+                            div.col.form-group
+                                label
+                                input.form-control(type="date" name="date")
+                            div.col.form-group
+                                label
+                                input.form-control(type="time" name="time")
+                        div.form-row
+                            div.col.form-group
+                                label
+                                input.form-control(name="numberPlate" placeholder="Enter Number Plate")
+                            div.col.form-group
+                                label
+                                input.form-control(name="carModel" placeholder="Enter Car Model")
+                        div.form-row
+                            div.col.form-group
+                                button.btn.btn-primary.btn-block Register
+                        
+
+
+                        
